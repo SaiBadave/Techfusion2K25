@@ -20,15 +20,22 @@ Part 1: VPC-Only Demo (No EC2 Required)
 
 Step 1️⃣: Create a Custom VPC
 
+<img width="900" height="712" alt="image" src="https://github.com/user-attachments/assets/013a8bc1-4ee6-45ea-8750-9742d0e06949" />
+
+
 1. Go to AWS Console → VPC → Your VPCs → Create VPC
 2. Configure:
-Name tag: DemoVPC
-IPv4 CIDR block: 10.0.0.0/16
-Tenancy: Default
+  Name tag: DemoVPC
+  IPv4 CIDR block: 10.0.0.0/16
+  Tenancy: Default
 
 3. Click Create VPC
 
 4. Result: A custom VPC is created.
+
+
+<img width="900" height="712" alt="image" src="https://github.com/user-attachments/assets/bf6dde8c-085c-4cae-85fc-a1f4a5968fb7" />
+
 
 Step 2️⃣: Create a Public Subnet
 
@@ -41,6 +48,9 @@ Step 2️⃣: Create a Public Subnet
 3. Click Create subnet
 4. Result: Public subnet is ready.
 
+<img width="1650" height="802" alt="image" src="https://github.com/user-attachments/assets/85d478df-ec35-43de-8dab-b6dad97da498" />
+
+
 
 Step 3️⃣: Create a Private Subnet
 
@@ -52,7 +62,8 @@ Availability Zone: e.g., ap-south-1b
 IPv4 CIDR block: 10.0.2.0/24
 3. Click Create subnet
 4. Result: Private subnet is ready.
-   
+
+<img width="1650" height="802" alt="image" src="https://github.com/user-attachments/assets/4d5b5b2b-b018-471c-b67c-aa9b53c0ac3e" />
 
 Step 4️⃣: Create and Attach an Internet Gateway (IGW)
 
@@ -64,6 +75,10 @@ Step 4️⃣: Create and Attach an Internet Gateway (IGW)
 
 
 Step 5️⃣: Configure Route Tables
+
+<img width="900" height="712" alt="image" src="https://github.com/user-attachments/assets/f79871e9-0ac5-439c-8c3b-839a35557e1b" />
+
+
 
 Public Route Table
 
@@ -85,6 +100,8 @@ Private Route Table
 3. VPC: DemoVPC
 4. Do NOT add route to IGW → ensures private subnet isolation
 5. Subnet Associations → Associate PrivateSubnet
+
+<img width="1665" height="297" alt="image" src="https://github.com/user-attachments/assets/d6eee3e0-9177-4ad4-a983-8d1b634f5d30" />
    
 
 Step 6️⃣: Demonstrate Public vs Private Access
